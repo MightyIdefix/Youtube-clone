@@ -1,0 +1,68 @@
+.subscribe-button{
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px; /* how to make distance between elements*/
+  transition: opacity 0.15s; /*makes it so the opacity transacts smouthly*/
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+/*psudo class for hovering*/
+.subscribe-button:hover{
+  opacity: 0.8; /*fadeout a element*/
+}
+
+/*psudo class for when button is pressed*/
+.subscribe-button:active{
+  opacity: 0.4; /*fadeout a element*/
+}
+
+.join-button{
+  background-color: white;
+  color: rgb(6, 05, 212);
+  border-radius: 2px;
+  cursor: pointer;
+  border: rgb(6, 05, 212);
+  border-style: solid;
+  border-width: 1px;
+  transition: background-color 1s, color 0.15s;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  vertical-align: top;
+}
+
+.join-button:hover{
+  background-color: rgb(29, 155, 240);
+  color: white;
+}
+
+.join-button:active{
+  opacity: 0.7;
+}
+
+.tweet-button{
+  background-color: rgb(0, 128, 255);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  margin-left: 8px;
+  transition: box-shadow 0.15;
+  padding-left: 16px;
+  padding-right: 16px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+.tweet-button:hover{
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+}
