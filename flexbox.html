@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Flexbox Practice
+    </title>
+  </head>
+
+  <body style="padding-bottom: 1000px;">
+    <!--with flexbox an element only takes a much space as it needs to (it's a flexable box)
+        with the flex-direction: row with elements are put into the same row. 
+        The big advantage of flexbox is that it's flexable and changes with the elements within it. 
+        Ex when you're logged in youtube there will we tre icons and the flexbox will take that amount of space
+        when you're logged out of youtube there will be two icons and the flexbox will change to take that amount of space instead-->
+    <div style="
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="background-color: lightblue;">div 1 text</div>
+      <div style="background-color: lightpink;">div 2</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="background-color: lightblue;">div 1 text</div>
+      <div style="background-color: lightpink;">div 2 <p>text</p></div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px 
+      </div>
+        
+      <!--If you want to make an element tage the remainter of the space in the flexbox use flex: 1-->
+      <div style="
+        background-color: lightpink;
+        flex: 1;">
+        flex 1
+      </div>
+    </div>  
+
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px 
+      </div>
+        
+      <!--If you want to make an element tage the remainter of the space in the flexbox use flex: 1-->
+      <div style="
+        background-color: lightpink;
+        flex: 1;">
+        flex 1
+      </div>
+
+      <!--If you have two elements with flex: one with flex 1 and one with flex 2.
+          The one with flex 2 will take 2/3 of the reminder of the flexbox's space.-->
+      <div style="
+        background-color: lightblue;
+        flex: 2;">
+        flex 2
+      </div>
+    </div> 
+    
+    <!--Here I've just changes the position of the elements in flexbox. 
+        If these elements were in a grid they would have changed how much space they take in the grid, when you move their position
+        but since it's a flexbox they ceep their amount of space-->
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    ">
+      <!--If you want to make an element tage the remainter of the space in the flexbox use flex: 1-->
+      <div style="
+        background-color: lightblue;
+        flex: 1;">
+        flex 1
+      </div>
+
+      <div style="
+        background-color: lightpink;
+        width: 100px;">
+        100px 
+      </div>
+
+      <!--If you have two elements with flex: one with flex 1 and one with flex 2.
+          The one with flex 2 will take 2/3 of the reminder of the flexbox's space.-->
+      <div style="
+        background-color: lightblue;
+        flex: 2;">
+        flex 2
+      </div>
+    </div> 
+
+    <!--Here you can se the effect of justify-content. It determins where in the flexbox the elements are
+        Here the elements are set to jystify-content: center, so the elements are in the center of the flexbox-->
+    <div style="
+    margin-top: 30px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    ">
+      <!--If you want to make an element tage the remainter of the space in the flexbox use flex: 1-->
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px
+      </div>
+
+      <div style="
+        background-color: lightpink;
+        width: 100px;">
+        100px 
+      </div>
+
+      <!--If you have two elements with flex: one with flex 1 and one with flex 2.
+          The one with flex 2 will take 2/3 of the reminder of the flexbox's space.-->
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px
+      </div>
+    </div> 
+
+    <!--The justify-content: space-between; makes equal space between each element-->
+    <div style="
+    margin-top: 30px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ">
+      <!--If you want to make an element tage the remainter of the space in the flexbox use flex: 1-->
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px
+      </div>
+
+      <div style="
+        background-color: lightpink;
+        width: 100px;">
+        100px 
+      </div>
+
+      <!--If you have two elements with flex: one with flex 1 and one with flex 2.
+          The one with flex 2 will take 2/3 of the reminder of the flexbox's space.-->
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px
+      </div>
+    </div> 
+
+    <!--The align-items place the items vertically within the flexbox
+        with align-items: strech the items will streach to take the intre vertical space 
+        with align-itmes: start they have their normal height, but are placed at the top of the flexbox
+        with align-itmes: end they have their normal height, but are placed at the buttom of the flexbox-->
+    <div style="
+    margin-top: 30px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ">
+      <!--If you want to make an element tage the remainter of the space in the flexbox use flex: 1-->
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px
+      </div>
+
+      <div style="
+        background-color: lightpink;
+        width: 100px;">
+        100px 
+      </div>
+
+      <!--If you have two elements with flex: one with flex 1 and one with flex 2.
+          The one with flex 2 will take 2/3 of the reminder of the flexbox's space.-->
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px
+      </div>
+    </div> 
+  </body>
+</html>
