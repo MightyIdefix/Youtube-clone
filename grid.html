@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+
+  <body style="padding-bottom: 1000px;">
+    <!--grild-tamplate-collums makes collums in your grid
+        for each attribute you gice it, it makes a new collum 
+        and the number of pixels gives each collum a size-->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px; 
+    "> 
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightpink;">div 2 <p>Text</p></div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+    ">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">100px <p>Text</p></div>
+      <div style="background-color: lightblue;">200px</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    ">
+      <!--ifr means is a special value in grid that stands for free space
+          it thates the reminder of space in the grid-->
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+    ">
+      <!--ifr means is a special value in grid that stands for free space
+          it thates the reminder of space in the grid. 
+          When two collums have 1fr they are equal and get the same ammound of space in the grid.
+          But if one is 1fr and the other is 2fr, 2fr gets 2/3 of the remaning space-->
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;
+    ">
+      <!--ifr means is a special value in grid that stands for free space
+          it thates the reminder of space in the grid. 
+          When two collums have 1fr they are equal and get the same ammound of space in the grid.
+          But if one is 1fr and the other is 2fr, 2fr gets 2/3 of the remaning space. 
+          If you make more collums than specified in the parrent div style 
+          then the extra collums will go to the next row-->
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    ">
+      <div style="background-color: lightpink;">col1</div>
+      <div style="background-color: lightpink;">col2</div>
+      <div style="background-color: lightpink;">col3</div>
+      <div style="background-color: lightpink;">col4</div>
+      <div style="background-color: lightpink;">col1</div>
+      <div style="background-color: lightpink;">col2</div>
+      <div style="background-color: lightpink;">col3</div>
+      <div style="background-color: lightpink;">col4</div>
+    </div>
+  </body>
+</html>
