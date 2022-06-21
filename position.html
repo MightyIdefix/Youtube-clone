@@ -17,7 +17,9 @@
         The same goes for left, reight buttom.
         If you poth use left: 10px and reight: 10px, the element will streach to be both 10px from the reight and left.
         Not only that but these parts (buttom, reight and left) will change with the page. 
-        But if you don't want that than use height and width so the element don't change-->
+        But if you don't want that than use height and width so the element don't change
+        If you want an element to be in fornt af an other, give it a high z-index.
+        Elements will be in front of others if they have a higher z-index than them-->
     <div style="
       background-color: black;
       color: white;
@@ -25,7 +27,8 @@
       top: 0px;
       left: 0px;
       right: 0px;
-      height: 50px;">
+      height: 50px;
+      z-index: 1;">
 
       header
 
@@ -41,6 +44,37 @@
     width: 72px;
     ">
       sidebar
+
+      <!--Normaly a position: absolute is placed on tha page, but this one
+          is placed in the sidebare element, which is fixed. 
+          So this element is now placed in a fixed position and it's 0px to the right of the sidebar.
+          This is very usefull when you fx want to make notification on an other element.-->
+        <div style="
+          position: absolute;
+          background-color: red;
+          color: white;
+          top: 0px;
+          right: 0px;
+        ">
+          X
+        </div>
+    </div>
+
+    <!--position: absolute works the same way as posistion: fixed except
+        postition: absolute is placed on the page 
+        while position: fixed is placed in the browser window.
+        When you scrole the elements placed on the page will move up
+        while the elements in the browser window always will be shown.
+        This element is coded after the header element and that's why it's
+        placed in front of the header element.-->
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 60px;
+      right: 10px;
+      ">
+      Absolute
     </div>
 
     <div style="
@@ -56,10 +90,25 @@
     <div style="
       background-color: lightpink;
       height: 200px;
-      width: 200px;">
+      width: 200px;
+      position: relative;">
 
       div 2
 
+      <!--Here the postition: absolute element is insode a position: relative element.
+          Therefore postition: absolute element placed on top of the position: relative element and not on the page 
+          and moves with the the element it's placed on.
+          The position: relative makes the element and elements inside of it behave normaly 
+          in other words the intre element will move with the page-->
+      <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        bottom: 7px;
+        right: 5px;
+        ">
+        5:00
+      </div>
     </div>
   </body>
 </html>
