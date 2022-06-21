@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Practice</title>
+  </head>
+
+  <!--With the padding we push some elements down by adding some space that can't be used inside of the body element -->
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 90px;
+  ">
+    <!--With position is css we can set the position of an element.
+        With position: fixed, the element is fixed to floate above the page 
+        and will always be at the top of the page. 
+        With top we can set how much space there is between the element at the top of the browser window.
+        The same goes for left, reight buttom.
+        If you poth use left: 10px and reight: 10px, the element will streach to be both 10px from the reight and left.
+        Not only that but these parts (buttom, reight and left) will change with the page. 
+        But if you don't want that than use height and width so the element don't change-->
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;">
+
+      header
+
+    </div>
+
+    <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 50px;
+    width: 72px;
+    ">
+      sidebar
+    </div>
+
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;">
+
+      div 1
+
+    </div>
+
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;">
+
+      div 2
+
+    </div>
+  </body>
+</html>
