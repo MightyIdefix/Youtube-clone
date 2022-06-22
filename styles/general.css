@@ -3,6 +3,21 @@ p{
   margin-bottom: 0;
 }
 
+a{
+  font-family: Roboto, Arial;
+  text-decoration: none;
+  color: black;
+}
+
+/*Inheritance in css mean that when you stile something in "parrent div"
+  or other element, it wil be inherited by the div and element inside of it.
+  Fx in this "parrent div". If that I set the font-family to Roboto 
+  all text inside this div will have font-family set to Robot. 
+  But not all properties can be inherited. Fx if you use border on this div
+  the elements inside will not get a border arround them.
+  An other thing with this is that if you set the color of the text here to red
+  and change it later in an other div to gray, css will give the text the color of 
+  the latest change (gray)*/
 body{
   font-family: Roboto, Arial;
   margin: 0;
@@ -12,3 +27,9 @@ body{
   padding-right: 24px;
   background-color: rgb(247, 247, 247);
 }
+
+body:hover .thumbnail-row, 
+body:hover .video-title{
+  cursor: pointer;
+}
+

@@ -1,9 +1,3 @@
-/*Inheritance in css mean that when you stile something in "parrent div"
-  or other element, it wil be inherited by the div and element inside of it.
-  Fx in this "parrent div". If you set the text-decoration: underline 
-  all text inside this div will have underline. 
-  But not all properties can be inherited. Fx if you use border on this div
-  the elements inside will not get a border arround them*/
 .video-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
