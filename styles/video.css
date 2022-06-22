@@ -1,9 +1,43 @@
+/*Inheritance in css mean that when you stile something in "parrent div"
+  or other element, it wil be inherited by the div and element inside of it.
+  Fx in this "parrent div". If you set the text-decoration: underline 
+  all text inside this div will have underline. 
+  But not all properties can be inherited. Fx if you use border on this div
+  the elements inside will not get a border arround them*/
 .video-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 15px;
   row-gap: 40px;
 }
+
+/*the css code here will only activate when the screen size is 0px op to max 750px. 
+  This is to make it so there will only be shown 2 videos on each row when the screen is 0px to 750px.
+  This will make help with responsive design for the webpage
+  You make responsive design with a lot of media quiries*/
+@media (max-width: 750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*the css code here will activate when the screen size is 751px op to max 999px. 
+  This is to make it so there will only be shown 3 videos on each row when the screen is in this scale.
+  This will make help with responsive design for the webpage*/
+@media (max-width: 751px) and (min-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*the css code here will only activate when the screen size is 1000px or above. 
+  This is to make it so there will only be shown 4 videos on each row when the screen is in this scale.
+  This will make help with responsive design for the webpage*/
+  @media (min-width: 1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 
 .thumbnail-1{
   width: 100%;
@@ -16,13 +50,14 @@
 }
 
 .video-time{
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 400;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  /*Padding is a short hand property. 
+    It makes is so padding left, right and os on is 4px.
+    if your write padding: 4px 10px 20px 30px you'll make padding
+    for each corner with one line of code. 
+    The same can be done for margin*/
+  padding: 4px;
   position: absolute;
   background-color: black;
   color: white;

@@ -47,15 +47,14 @@
   width: 0;
   padding-left: 10px;
   font-size: 16px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(192, 192, 192); 
+  /*border is a short hand property. 
+    It makes is so we can use border-width, -style and -color in one line of code*/
+  border: 1px solid rgb(192, 192, 192);
   border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 .search-bar::placeholder{
-  font-family: Roboto, Arial;
   font-size: 16px;
 }
 
@@ -155,7 +154,6 @@
 }
 
 .notifications-count{
-  font-family: Roboto, Arial;
   font-size: 11px;
   font-weight: 400;
   padding-left: 5px;
